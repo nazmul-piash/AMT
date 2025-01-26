@@ -134,6 +134,7 @@ a:focus {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: right bottom; /* Position the image to the right bottom */
   }
 }
 
@@ -156,7 +157,6 @@ a:focus {
       }
     }
   }
-
 }
 
 .header_section {
@@ -228,10 +228,8 @@ a:focus {
   .user_link {
     color: $white;
 
-
     &:hover {
       color: $primary1;
-
     }
   }
 
@@ -248,7 +246,6 @@ a:focus {
     }
 
     &:hover {
-
       svg {
         fill: $primary1;
       }
@@ -311,7 +308,6 @@ a:focus {
         top: 0;
       }
     }
-
   }
 }
 
@@ -352,16 +348,13 @@ a:focus {
       @include hero_btn($primary1, $white, 10px, 45px, 45px);
       margin-top: 10px;
     }
-
   }
 
   .img-box {
     img {
       width: 100%;
     }
-
   }
-
 
   .carousel-indicators {
     position: unset;
@@ -388,7 +381,6 @@ a:focus {
 // end slider section
 
 // offer section
-
 .offer_section {
   position: relative;
   padding-top: 45px;
@@ -403,13 +395,13 @@ a:focus {
     color: $white;
 
     .img-box {
-      width: 175px;
+      width: 100%;
       min-width: 175px;
-      height: 175px;
+      height: 80%;
       margin-right: 15px;
       position: relative;
-      transition: all .1.5s;
-      border-radius: 100%;
+      transition: all 0.15s;
+      border-radius: 2%;
       border: 5px solid $primary1;
       overflow: hidden;
 
@@ -420,7 +412,6 @@ a:focus {
     }
 
     .detail-box {
-
       h5 {
         @include second-font();
         font-size: 28px;
@@ -433,7 +424,7 @@ a:focus {
 
         span {
           font-size: 2.5rem;
-          font-weight: bold
+          font-weight: bold;
         }
       }
 
@@ -453,23 +444,18 @@ a:focus {
 
     &:hover {
       .img-box {
-
         img {
           transform: scale(1.1);
         }
       }
     }
   }
-
 }
 
 // end offer section
 
-
 // food section
-
 .food_section {
-
   .filters_menu {
     padding: 0;
     display: flex;
@@ -596,7 +582,6 @@ a:focus {
       position: relative;
       z-index: 2;
     }
-
   }
 
   .detail-box {
@@ -621,9 +606,7 @@ a:focus {
     margin-bottom: 25px;
   }
 
-
   .form_container {
-
     .form-control {
       width: 100%;
       border: none;
@@ -640,8 +623,6 @@ a:focus {
       &::placeholder {
         color: #222222;
       }
-
-
     }
 
     .nice-select .current {
@@ -668,14 +649,11 @@ a:focus {
       width: 100%;
     }
   }
-
 }
 
 // end book section
 
-
-/* client section start */
-
+// client section start
 .client_section {
   .heading_container {
     margin-bottom: 30px;
@@ -756,14 +734,13 @@ a:focus {
   }
 }
 
-/* client section end */
+// client section end
 
 // contact section
 .contact_section {
   .heading_container {
     margin-bottom: 45px;
   }
-
 
   .form_container {
     .form-group {
@@ -803,14 +780,11 @@ a:focus {
       @include hero_btn($primary1, $white, 10px, 55px, 0px);
     }
   }
-
-
 }
 
 // end contact section
 
 /* footer section*/
-
 .footer_section {
   background-color: $primary2;
   color: $white;
@@ -837,7 +811,6 @@ a:focus {
   }
 
   .footer_contact {
-
     .contact_link_box {
       display: flex;
       flex-direction: column;
@@ -889,8 +862,6 @@ a:focus {
       }
     }
   }
-
-
 
   .footer-info {
     text-align: center;
