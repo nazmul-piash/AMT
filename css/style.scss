@@ -1,7 +1,7 @@
 $white: #ffffff;
 $black: #000000;
 $primary1: #ffbe33;
-$primary2: #222831;
+$primary2: #10302b;
 $textCol: #1f1f1f;
 
 // import fonts -  font-family: 'Open Sans', sans-serif and  font-family: 'Dancing Script', cursive;
@@ -37,7 +37,7 @@ $textCol: #1f1f1f;
 
 body {
   @include main-font;
-  color: #0c0c0c;
+  color: #000000;
   background-color: #ffffff;
   overflow-x: hidden;
 }
@@ -564,7 +564,7 @@ a:focus {
 
 // about section
 .about_section {
-  background: $primary2;
+  background: #10302b;
   color: $white;
 
   .row {
